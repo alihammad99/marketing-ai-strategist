@@ -62,7 +62,7 @@ const Form = memo(() => {
     try {
       console.log({ ...businessData, user_id: user.id });
       const response = await fetch(
-        `${process.env.SERVER_URL}/generate-plan?user_id=${user.id}`,
+        `https://marketing-ai-strategist-pise.vercel.app/generate-plan?user_id=${user.id}`,
         {
           method: "POST",
           headers: {
