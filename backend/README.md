@@ -1,39 +1,51 @@
-# Backend Setup Guide
+# FastAPI Starter
 
-## Quick Start
+Deploy your [FastAPI](https://fastapi.tiangolo.com/) project to Vercel with zero configuration.
 
-1. Create a virtual environment:
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/vercel/tree/main/examples/fastapi&template=fastapi)
+
+_Live Example: https://vercel-plus-fastapi.vercel.app/_
+
+Visit the [FastAPI documentation](https://fastapi.tiangolo.com/) to learn more.
+
+## Getting Started
+
+Install the required dependencies:
+
 ```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+python -m venv .venv
+source .venv/bin/activate
+pip install .
 ```
 
-2. Install dependencies:
+Or, if using [uv](https://docs.astral.sh/uv/):
+
 ```bash
-pip install -r requirements.txt
+uv sync
 ```
 
-3. Configure environment variables in `.env`:
-```
-VITE_SUPABASE_URL=your_supabase_url
-VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
-HF_TOKEN=your_huggingface_token
-```
 
-4. Run the server:
+## Running Locally
+
+Start the development server on http://0.0.0.0:5001
+
 ```bash
 python main.py
+# using uv:
+uv run main.py
 ```
 
-The API will be available at `http://localhost:8000`
+When you make changes to your project, the server will automatically reload.
 
-## API Documentation
+## Deploying to Vercel
 
-Once the server is running, visit:
-- Swagger UI: `http://localhost:8000/docs`
-- ReDoc: `http://localhost:8000/redoc`
+Deploy your project to Vercel with the following command:
 
-## Models Used
+```bash
+npm install -g vercel
+vercel --prod
+```
 
-1. **NazareAI Senior Marketing Strategist** - Generates comprehensive marketing plans
-2. **DeepSeek R1 Distill Llama 8B** - Translates and improves content
+Or `git push` to your repository with our [git integration](https://vercel.com/docs/deployments/git).
+
+To view the source code for this template, [visit the example repository](https://github.com/vercel/vercel/tree/main/examples/fastapi).

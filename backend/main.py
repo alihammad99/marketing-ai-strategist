@@ -1,3 +1,4 @@
+from fastapi.responses import HTMLResponse
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from typing import Optional
@@ -14,7 +15,11 @@ import traceback
 
 load_dotenv()
 
-app = FastAPI(title="AI Marketing Strategist Platform")
+app = FastAPI(
+    title="AI Marketing Strategist Platform",
+    description="Vercel + FastAPI",
+    version="1.0.0",
+)
 
 app.add_middleware(
     CORSMiddleware,
@@ -103,6 +108,11 @@ async def get_user_plans(user_id: str):
     except Exception as e:
         print(e)
         raise HTTPException(status_code=500, detail=str(e))
+ 
 
+
+
+ 
 if __name__ == "__main__":
-    main()
+    import uvicorn
+    uvicorn.run("main:app", host="0.0.0.0", port=5001, reload=True)
