@@ -10,3 +10,4 @@ openai
 torch
 typing
 traceback
+mangums

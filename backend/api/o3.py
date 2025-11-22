@@ -1,8 +1,8 @@
 import os
 from openai import OpenAI
 from dotenv import load_dotenv
-from class_list import BusinessInput
-from prompt import generatePrompt
+from .class_list import BusinessInput
+from .prompt import generatePrompt
 
 load_dotenv()
 

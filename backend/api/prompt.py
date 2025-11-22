@@ -1,4 +1,4 @@
-from class_list import BusinessInput
+from .class_list import BusinessInput
 
 def generatePrompt(business: BusinessInput):
     prompt = f"""

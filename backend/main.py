@@ -5,11 +5,11 @@ import os
 from dotenv import load_dotenv
 from huggingface_hub import InferenceClient
 import httpx
-from class_list import BusinessInput, MarketingPlanResponse
-from db import supabaseClient
-from prompt import generatePrompt
+from api.class_list import BusinessInput, MarketingPlanResponse
+from api.db import supabaseClient
+from api.prompt import generatePrompt
 # from model import generatePlan
-from o3 import generateCloudPlan
+from api.o3 import generateCloudPlan
 import traceback
 
 load_dotenv()

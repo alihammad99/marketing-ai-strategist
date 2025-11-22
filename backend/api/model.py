@@ -1,8 +1,8 @@
 import os
 import torch
 from transformers import pipeline, AutoModelForCausalLM, AutoTokenizer
-from prompt import generatePrompt
-from class_list import BusinessInput
+from .prompt import generatePrompt
+from .class_list import BusinessInput
 
 # Use all CPU threads
 torch.set_num_threads(os.cpu_count())
