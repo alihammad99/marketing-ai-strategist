@@ -3,8 +3,8 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from typing import Optional
 import os
-from dotenv import load_dotenv
 from huggingface_hub import InferenceClient
+from dotenv import load_dotenv
 import httpx
 from utils.class_list import BusinessInput, MarketingPlanResponse
 from utils.db import supabaseClient
