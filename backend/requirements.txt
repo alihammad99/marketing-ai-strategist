@@ -6,3 +6,7 @@ pydantic
 supabase
 huggingface-hub
 transformers
+openai
+torch
+typing
+traceback
