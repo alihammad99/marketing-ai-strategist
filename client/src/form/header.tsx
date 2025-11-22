@@ -5,7 +5,7 @@ const FormHeader = ({ planHistory, handleNewPlan, handleSignOut }: any) => {
   return (
     <header className="bg-white shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-        <div className="flex items-center justify-between">
+        <div className="flex flex-col md:flex-row gap-4 items-center justify-between">
           <div className="flex items-center">
             <Sparkles className="w-10 h-10 text-blue-600 mr-3" />
             <h1 className="text-2xl font-bold text-gray-800">

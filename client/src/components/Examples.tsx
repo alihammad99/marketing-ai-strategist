@@ -7,7 +7,7 @@ const Examples = ({
   setFormData: (data: BusinessInput) => void;
 }) => {
   return (
-    <div className="flex items-center gap-2 my-8">
+    <div className="flex flex-wrap items-center gap-2 my-8">
       <h2 className="text-xl text-slate-600">Try an example: </h2>
       {examples?.map((item) => (
         <button

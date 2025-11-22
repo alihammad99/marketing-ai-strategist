@@ -128,6 +128,8 @@ const Form = memo(() => {
     );
   }
 
+  if (!user) return null;
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-gray-100">
       <FormHeader
