@@ -4,10 +4,4 @@ python-dotenv
 httpx
 pydantic
 supabase
-huggingface-hub
-transformers
 openai
-torch
-typing
-traceback
-mangums
