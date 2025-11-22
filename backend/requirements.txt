@@ -6,3 +6,4 @@ pydantic
 supabase
 openai
 huggingface_hub
+dotenv
