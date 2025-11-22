@@ -61,7 +61,7 @@ function App() {
     try {
       console.log({ ...businessData, user_id: user.id });
       const response = await fetch(
-        `http://localhost:8000/api/generate-plan?user_id=${user.id}`,
+        `${process.env.SERVER_URL}/generate-plan?user_id=${user.id}`,
         {
           method: "POST",
           headers: {
